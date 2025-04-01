@@ -1,11 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     justify-content: center;
 }
+
 main {
-    font-size: x-large;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 360px;
 }
 
 .header_box {
-    width: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info_box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
 }
