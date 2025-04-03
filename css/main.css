@@ -3,30 +3,32 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
     background-color: rgb(214, 214, 214);
 }
 
 main {
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 360px;
     background-color: white;
     padding: 10px;
+    margin: auto;
+    max-width: 1200px;
 }
 
-.header_box {
+.head_box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.info_box {
+.nav_box {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border: solid grey 2px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .banner {
@@ -60,7 +62,14 @@ img {
     max-width: 100%;
 }
 
-h2 {
+h1 {
     font-size: large;
 }
 
+h3 {
+    margin-bottom: 20px;
+}
+
+.essential_buttons_hidden {
+    display: none;
+}
