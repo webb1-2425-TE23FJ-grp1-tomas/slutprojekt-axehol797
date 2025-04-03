@@ -5,12 +5,15 @@
 body {
     display: flex;
     justify-content: center;
+    background-color: rgb(214, 214, 214);
 }
 
 main {
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 360px;
+    background-color: white;
+    padding: 10px;
 }
 
 .header_box {
@@ -33,9 +36,31 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 7px;
+    font-size: larger;
 }
+
 
 a {
     text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
+
+.link_box {
+    margin-bottom: 20px;
+}
+
+.link_box :hover {
+    color: gold;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: large;
+}
+
