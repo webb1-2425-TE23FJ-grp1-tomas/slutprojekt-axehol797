@@ -22,10 +22,7 @@ main {
     align-items: center;
 }
 
-.nav_box {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.product_box {
     border: solid grey 2px;
     padding: 5px;
     border-radius: 5px;
@@ -51,6 +48,11 @@ a {
 
 .link_box {
     margin-bottom: 20px;
+    
+    max-width: 165px;
+    background-color: lightgrey;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .link_box :hover {
@@ -72,4 +74,13 @@ h3 {
 
 .essential_buttons_hidden {
     display: none;
+}
+
+p {
+    font-weight: bold;
+    margin: 10px;
+}
+
+ul {
+    margin: 0px;
 }
