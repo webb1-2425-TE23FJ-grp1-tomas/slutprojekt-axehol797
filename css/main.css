@@ -114,7 +114,26 @@ a {
 
 .klubbor {
     background-color: white;
-    margin: 10px;
-    padding: 5px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+
+
+.klubbaInfo {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+  }
