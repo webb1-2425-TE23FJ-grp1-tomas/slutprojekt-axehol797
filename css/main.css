@@ -20,6 +20,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .product_box {
@@ -71,9 +72,7 @@ h3 {
     margin-bottom: 20px;
 }
 
-.essential_buttons {
-    display: none;
-}
+
 
 p {
     font-weight: bold;
@@ -92,10 +91,6 @@ ul {
     display: none;
     left: 0px;
     top: 0px;
-}
-
-#menu_button {
-    margin-right: 20px;
 }
 
 .menu_items {
