@@ -22,11 +22,10 @@
                     d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
             </svg>
         </div>
-        <div class="menu_items"><a>Logga in</a></div>
-        <div class="menu_items"><a>Kundvagn</a></div>
         <div class="menu_items"><a href="index.html">Tillbaka</a></div>
         <div class="menu_items"><a href="kläder.html">Kläder</a></div>
-        <div class="menu_items"><a href="medlemsskap.html">Medlemsskap</a></div>
+        <div class="menu_items"><a>Logga in</a></div>
+        <div class="menu_items"><a>Kundvagn</a></div>
     </aside>
     <main>
         <header>
@@ -51,25 +50,33 @@
         </header>
         <div class="grid_klubbor">
             <div class="klubbor">
-                <img src="img/bjorkgold.webp" alt="bjorkGold">
+                <div class="gallery">
+                    <a href="img/gold.webp"><img src="img/bjorkgold.webp" alt="" title="" /></a>
+                </div>
                 <div>Björk Gold</div>
                 <p class="klubbaInfo">Björk Gold är en medeltung klubba som har en nromal flex, passar dem flesta
                     amatörspelare</p>
             </div>
             <div class="klubbor">
-                <img src="img/bjorkblackline.webp" alt="bjorkBlackline">
+                <div class="gallery">
+                    <a href="img/blackline.webp"><img src="img/bjorkblackline.webp" alt="" title="" /></a>
+                </div>
                 <div>Björk Blackline</div>
                 <p class="klubbaInfo">Björk Blackline är en klassisk träklubba täckt med fiberglas, för dem som gillar
                     tyngre klubbor</p>
             </div>
             <div class="klubbor">
-                <img src="img/bjorkgoldprof.webp" alt="goldProf">
+                <div class="gallery">
+                    <a href="img/goldprof.webp"><img src="img/bjorkgoldprof.webp" alt="" title="" /></a>
+                </div>
                 <div>Björk Gold Prof</div>
                 <p class="klubbaInfo">Björk Gold Proffesinal är styvare och lättare än vanliga Björk Gold, passar dem
                     som söker en skottklubba</p>
             </div>
             <div class="klubbor">
-                <img src="img/bjorkgrid.webp" alt="bjorkGrid">
+                <div class="gallery">
+                    <a href="img/grid.webp"><img src="img/bjorkgrid.webp" alt="" title="" /></a>
+                </div>
                 <div>Björk Grid</div>
                 <p class="klubbaInfo">Björk Grid är en lättare klubba som är lätt att hantera i snabba rörelser, för dem
                     som vill vara mer explosiva i sina rörelser på planen</p>
@@ -77,7 +84,9 @@
         </div>
 
     </main>
-<script src="js/simple-lightbox.min.js"></script>   
-<script> let lightbox = new SimpleLightbox('.gallery a', { /* options */ });</script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script> let lightbox = new SimpleLightbox('.gallery a', { /* options */ });</script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
