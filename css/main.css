@@ -76,7 +76,7 @@ a {
     text-decoration: none;
 }
 
-.grid_klubbor {
+.grid_container_klubbor {
     display: grid;
 }
 
@@ -115,7 +115,7 @@ h1 {
 }
 
 .news_container {
-
+    
 }
 
 .news {
