@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -32,14 +34,15 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 7px;
     font-size: larger;
+    justify-content: center;
 }
 
 
 img {
     display: block;
     max-width: 100%;
+    border-radius: 5px;
 }
 
 h1 {
@@ -66,6 +69,15 @@ ul {
     top: 0px;
 }
 
+#menu_button {
+    border-radius: 5px;
+}
+
+#menu_button:hover {
+    background-color: goldenrod;
+}
+
+
 .menu_items {
     margin: 15px;
     padding: 5px;
@@ -81,7 +93,7 @@ a {
 }
 
 .klubbor {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
@@ -114,13 +126,46 @@ h1 {
     margin: 5px;
 }
 
-.news_container {
-    
-}
-
 .news {
-    background-color: #ffffff;
-    padding: 5px;
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* max-width: 360px; */
+}
+
+#news_message {
+    color: #636363;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.news_head {
+    margin: 10px;
+}
+
+.news_paragraph {
+    max-width: 280px;
+}
+
+#forsasong {
+    grid-area: a;
+}
+
+#forlangning {
+    grid-area: b;
+}
+
+.news_container {
+    padding: 5px;
+}
+
+.news_grid {
+    display: grid;
+    grid-template-areas:
+     "a"
+     "b"
+     ;
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Derby LBK</title>
+    <link rel="stylesheet" href="css/simple-lightbox.min.css">
     <link rel="stylesheet" href="css\main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,16 +18,17 @@
         <div class="menu_items"><a>Logga in</a></div>
         <div class="menu_items"><a>Kundvagn</a></div>
     </aside>
-
+    <header>
+        <div class="banner">
+            <img src="img\klubbMarke.webp" alt="Derby">
+            <i>På vingar av stål</i>
+        </div>
+    </header>
     <main>
-        <header>
-            <div class="banner">
-                <img src="img\klubbMarke.webp" alt="Derby">
-                <i>På vingar av stål</i>
-            </div>
-            <div class="head_box">
-                <h1>Derby/Linköping BK</h1>
-                <a id="menu_button" href="">
+        <div class="head_box">
+            <h1>Derby/Linköping BK</h1>
+            <div id="menu_button">
+                <a>
                     <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
                         fill="#1f1f1f">
                         <path
@@ -34,32 +36,43 @@
                     </svg>
                 </a>
             </div>
-        </header>
-
+        </div>
         <div class="news_container">
             <h2>Nyheter</h2>
-            <div class="news">
-                <h3>Försäsongen är igång</h3>
+            <div class="news_grid">
+                <div class="news" id="forsasong">
+                    <h3 class="news_head">Försäsongen är igång</h3>
+                    <div class="gallery">
+                        <a href="img/springasombaradenlightbox.webp"><img src="img/springasombaraden.webp"
+                                alt="Running" /></a>
+                    </div>
+                    <div class="news_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic expedita
+                        voluptate quidem esse inventore nulla perferendis, odio rerum commodi culpa officia tenetur
+                        corporis
+                        exercitationem accusantium iste aliquam. Eaque, ut dolorum.</div>
+                </div>
+                <div class="news" id="forlangning">
+                    <h3 class="news_head">De spelarna förlänger</h3>
+                    <div class="gallery">
+                        <a href="img/kontraktlightbox.webp"><img src="img/kontrakt.webp" alt="Kontrakt" /></a>
+                    </div>
+                    <div class="news_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                        porro
+                        libero officiis debitis dolores magnam maxime vitae numquam velit! Consequuntur nisi optio
+                        accusamus
+                        dolor perspiciatis recusandae ullam sequi neque omnis.</div>
+                </div>
             </div>
-            <div class="news">
-                <h3>De spelarna förlänger</h3>
-            </div>
+            <h3 id="news_message">Inga fler nyheter just nu</h3>
         </div>
-
-        <!-- <nav class="product_box">
-            <p>Produkter</p>
-            <ul>
-                <div class="link_box"><a class="link_box_links" href="kläder.html">Kläder</a></div>
-                <div class="link_box"><a class="link_box_links" href="klubbor.html">Klubbor</a></div>
-                <div class="link_box"><a class="link_box_links" href="medlemsskap.html">Medlemsskap</a></div>
-            </ul>
-        </nav> -->
 
 
 
     </main>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script> let lightbox = new SimpleLightbox('.gallery a', { /* options */ });</script>
     <script src='js/main.js'></script>
-    
+    <script></script>
 </body>
 
 </html>
