@@ -5,88 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Derby LBK Klubbor</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/simple-lightbox.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
-    <aside class="menu">
-        <div id="menuclose">
-            <svg id="cross" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
-                fill="#FFFFFF">
-                <path
-                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-            </svg>
+    <header>
+        <div class="banner">
+            <img src="img\klubbMarke.webp" alt="Derby">
+            <i>På vingar av stål</i>
         </div>
-        <div class="menu_items"><a href="index.html">Tillbaka</a></div>
-        <div class="menu_items"><a href="kläder.html">Kläder</a></div>
-        <div class="menu_items"><a>Logga in</a></div>
-        <div class="menu_items"><a>Kundvagn</a></div>
-    </aside>
+    </header>
     <main>
-        <header>
-            <div class="banner">
-                <img src="img\klubbMarke.webp" alt="Derby">
-                <i>På vingar av stål</i>
-            </div>
-            <div class="head_box">
-                <div class="buttons">
-                    <div id="menu_button">
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
-                                fill="#1f1f1f">
-                                <path
-                                    d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
-                            </svg>
-                        </a>
+        <div class="head_box">
+            <h1>Derby/Linköping BK</h1>
+            <nav>
+                <svg id="menu_open" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#1f1f1f">
+                    <path
+                        d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                </svg>
+                <ul class="menu">
+                    <li class="menu_item"><svg id="menu_close" xmlns="http://www.w3.org/2000/svg" height="50px"
+                            viewBox="0 -960 960 960" width="40px" fill="#636363">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></li>
+                    <div class="linkbox">
+                        <li class="menu_item"><a href="index.html" class="menu_link">Hem</a></li>
+                        <li class="menu_item"><a href="klubbor.html" class="menu_link">Klubbor</a></li>
+                        <li class="menu_item"><a href="about.html" class="menu_link">Om oss</a></li>
                     </div>
-                </div>
-                <h1>Derby/Linköping BK</h1>
-            </div>
-        </header>
-        <div class="grid_container_klubbor">
-            <div class="klubbor" id="klubba_gold">
+                </ul>
+            </nav>
+        </div>
+        <div class="grid">
+            <div class="content_box" id="klubba_gold">
                 <div class="gallery">
                     <a href="img/gold.webp"><img src="img/bjorkgold.webp" alt="" title="" /></a>
                 </div>
-                <div>Björk Gold</div>
-                <p class="klubbaInfo">Björk Gold är en medeltung klubba som har en nromal flex, passar dem flesta
-                    amatörspelare</p>
+                <h3 class="content_box_head">Björk Gold</h3>
+                <div class="grid_text_box">
+                    <p class="grid_text">Björk Gold är en medeltung klubba som har en normal flex, passar dem flesta
+                        amatörspelare</p>
+                </div>
             </div>
-            <div class="klubbor" id="klubba_blackline">
+            <div class="content_box" id="klubba_blackline">
                 <div class="gallery">
                     <a href="img/blackline.webp"><img src="img/bjorkblackline.webp" alt="" title="" /></a>
                 </div>
                 <div>Björk Blackline</div>
-                <p class="klubbaInfo">Björk Blackline är en klassisk träklubba täckt med fiberglas, för dem som gillar
-                    tyngre klubbor</p>
+                <p class="grid_text">
+                    Björk Blackline är en klassisk träklubba täckt med fiberglas, för dem som gillar
+                    tyngre klubbor
+                </p>
             </div>
-            <div class="klubbor" id="klubba_prof">
+            <div class="content_box" id="klubba_prof">
                 <div class="gallery">
                     <a href="img/goldprof.webp"><img src="img/bjorkgoldprof.webp" alt="" title="" /></a>
                 </div>
                 <div>Björk Gold Prof</div>
-                <p class="klubbaInfo">Björk Gold Proffesinal är styvare och lättare än vanliga Björk Gold, passar dem
-                    som söker en skottklubba</p>
+                <p class="grid_text">Björk Gold Proffesinal är styvare och lättare än vanliga Björk Gold, passar dem
+                    som vill ha en ordentlig skottklubba</p>
             </div>
-            <div class="klubbor" id="klubba_grid">
+            <div class="content_box" id="klubba_grid">
                 <div class="gallery">
                     <a href="img/grid.webp"><img src="img/bjorkgrid.webp" alt="" title="" /></a>
                 </div>
                 <div>Björk Grid</div>
-                <p class="klubbaInfo">Björk Grid är en lättare klubba som är lätt att hantera i snabba rörelser, för dem
-                    som vill vara mer explosiva i sina rörelser på planen</p>
+                <p class="grid_text">Björk Grid är en lättare klubba som är lätt att hantera i snabba rörelser, för dem
+                    som vill vara mer explosiva i sina rörelser och förflyttningar på planen</p>
             </div>
         </div>
 
     </main>
     <script src="js/simple-lightbox.min.js"></script>
     <script> let lightbox = new SimpleLightbox('.gallery a', { /* options */ });</script>
-    <script src="js/main.js"></script>
 </body>
 
 </html>

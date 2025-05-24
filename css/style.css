@@ -11,7 +11,6 @@ body {
 
 main {
     font-size: large;
-
     background-color: lightgrey;
     padding: 10px;
     margin: auto;
@@ -35,13 +34,13 @@ main {
     flex-direction: row;
     align-items: center;
     font-size: larger;
-    justify-content: center;
 }
 
 
 img {
     display: block;
     max-width: 100%;
+    max-height: 100%;
     border-radius: 5px;
 }
 
@@ -60,31 +59,48 @@ ul {
 }
 
 .menu {
-    position: fixed;
-    background-color: #034001;
-    width: 50%;
-    height: 100%;
+    padding: 0;
+    list-style-type: none;
     display: none;
-    left: 0px;
-    top: 0px;
+    flex-direction: column;
+    /* align-items: end; */
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    top: 0;
+    right: 0;
 }
 
-#menu_button {
+.menu_flex {
+    flex-direction: row;
+    justify-content: end;
+}
+
+#cross {
+    width: max-content;
+}
+
+#menu_open,
+#menu_close {
+    cursor: pointer;
+}
+
+
+.menu_link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #636363;
     border-radius: 5px;
 }
 
-#menu_button:hover {
-    background-color: goldenrod;
-}
-
-
-.menu_items {
-    margin: 15px;
-    padding: 5px;
+nav {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 a {
-    color: goldenrod;
     text-decoration: none;
 }
 
@@ -102,8 +118,7 @@ a {
     align-items: center;
 }
 
-
-.klubbaInfo {
+.grid_text {
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -117,24 +132,14 @@ h1 {
     font-style: bold;
 }
 
-#menuclose {
-    display: flex;
-    justify-content: end;
-}
-
-#cross {
-    margin: 5px;
-}
-
-.news {
+.content_box {
     background-color: rgb(236, 236, 236);
-    padding: 10px;
+    padding: 10px 0;
     border-radius: 5px;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* max-width: 360px; */
 }
 
 #news_message {
@@ -142,11 +147,11 @@ h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.news_head {
+.content_box_head {
     margin: 10px;
 }
 
-.news_paragraph {
+.grid_text_box {
     max-width: 280px;
 }
 
@@ -162,10 +167,52 @@ h1 {
     padding: 5px;
 }
 
-.news_grid {
+.grid {
     display: grid;
     grid-template-areas:
-     "a"
-     "b"
-     ;
+        "a"
+        "b"
+    ;
 }
+
+
+@media screen and (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background-color: lightgrey;
+        width: max-content;
+    }
+
+    .linkbox {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu_link:hover {
+        background-color: #636363;
+        color: lightgrey;
+    }
+
+    #menu_close,
+    #menu_open {
+        display: none;
+    }
+
+
+
+    .grid {
+        grid-template-areas:
+            "a b"
+        ;
+    }
+
+    .content_box {
+        margin: 5px;
+    }
+}
+
+/* @media screen and (min-width: 1440px) {
+    
+} */

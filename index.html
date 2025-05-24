@@ -5,19 +5,16 @@
     <meta charset="UTF-8">
     <title>Derby LBK</title>
     <link rel="stylesheet" href="css/simple-lightbox.min.css">
-    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css\style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src='js/main.js' defer></script>
 </head>
 
 <body>
-    <aside class="menu">
-        <div class="menu_items"><a>Logga in</a></div>
-        <div class="menu_items"><a>Kundvagn</a></div>
-    </aside>
     <header>
         <div class="banner">
             <img src="img\klubbMarke.webp" alt="Derby">
@@ -27,40 +24,51 @@
     <main>
         <div class="head_box">
             <h1>Derby/Linköping BK</h1>
-            <div id="menu_button">
-                <a>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
-                        fill="#1f1f1f">
-                        <path
-                            d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
-                    </svg>
-                </a>
-            </div>
+            <nav>
+                <svg id="menu_open" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#1f1f1f">
+                    <path
+                        d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                </svg>
+                <ul class="menu">
+                    <div class="menu_flex">
+                        <li class="menu_item" id="cross"><svg id="menu_close" xmlns="http://www.w3.org/2000/svg" height="50px"
+                                viewBox="0 -960 960 960" width="40px" fill="#636363">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></li>
+                    </div>
+                    <div class="linkbox">
+                        <li class="menu_item"><a href="index.html" class="menu_link">Hem</a></li>
+                        <li class="menu_item"><a href="klubbor.html" class="menu_link">Klubbor</a></li>
+                        <li class="menu_item"><a href="about.html" class="menu_link">Om oss</a></li>
+                    </div>
+                </ul>
+            </nav>
         </div>
         <div class="news_container">
             <h2>Nyheter</h2>
-            <div class="news_grid">
-                <div class="news" id="forsasong">
-                    <h3 class="news_head">Försäsongen är igång</h3>
-                    <div class="gallery">
-                        <a href="img/springasombaradenlightbox.webp"><img src="img/springasombaraden.webp"
-                                alt="Running" /></a>
+            <div class="grid">
+                <div class="content_box" id="forsasong">
+                    <img src="img/springasombaraden.webp" alt="Running">
+                    <h3 class="content_box_head">Försäsongen är igång</h3>
+                    <div class="grid_text_box">
+                        <p class="grid_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic expedita
+                            voluptate quidem esse inventore nulla perferendis, odio rerum commodi culpa officia tenetur
+                            corporis
+                            exercitationem accusantium iste aliquam. Eaque, ut dolorum.</p>
                     </div>
-                    <div class="news_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic expedita
-                        voluptate quidem esse inventore nulla perferendis, odio rerum commodi culpa officia tenetur
-                        corporis
-                        exercitationem accusantium iste aliquam. Eaque, ut dolorum.</div>
                 </div>
-                <div class="news" id="forlangning">
-                    <h3 class="news_head">De spelarna förlänger</h3>
-                    <div class="gallery">
-                        <a href="img/kontraktlightbox.webp"><img src="img/kontrakt.webp" alt="Kontrakt" /></a>
+                <div class="content_box" id="forlangning">
+                    <img src="img/kontrakt.webp" alt="Kontrakt">
+                    <h3 class="content_box_head">De spelarna förlänger</h3>
+                    <div class="grid_text_box">
+                        <p class="grid_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            porro
+                            libero officiis debitis dolores magnam maxime vitae numquam velit! Consequuntur nisi optio
+                            accusamus
+                            dolor perspiciatis recusandae ullam sequi neque omnis.</p>
                     </div>
-                    <div class="news_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
-                        porro
-                        libero officiis debitis dolores magnam maxime vitae numquam velit! Consequuntur nisi optio
-                        accusamus
-                        dolor perspiciatis recusandae ullam sequi neque omnis.</div>
                 </div>
             </div>
             <h3 id="news_message">Inga fler nyheter just nu</h3>
@@ -69,10 +77,7 @@
 
 
     </main>
-    <script src="js/simple-lightbox.min.js"></script>
-    <script> let lightbox = new SimpleLightbox('.gallery a', { /* options */ });</script>
-    <script src='js/main.js'></script>
-    <script></script>
+
 </body>
 
 </html>
