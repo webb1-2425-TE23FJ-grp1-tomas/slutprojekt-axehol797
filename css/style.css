@@ -166,10 +166,6 @@ h1 {
     grid-area: d;
 }
 
-.news_container {
-    padding: 5px;
-}
-
 .btn_purchase {
     background-color: darkgreen;
     color: white;
@@ -235,6 +231,11 @@ h1 {
     ;
 }
 
+.grid_klubbor {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 #kontakter {
     display: flex;
     flex-direction: column;
@@ -287,6 +288,10 @@ h1 {
         ;
     }
 
+    .grid_klubbor {
+        grid-template-columns: 1fr 1fr;
+    }
+
     #wide_grid_text_box {
         max-width: 580px;
     }
@@ -316,6 +321,10 @@ h1 {
             "d d b"
 
         ;
+    }
+
+    .grid_klubbor {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     #tall_grid_text_box {
